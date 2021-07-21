@@ -1,0 +1,92 @@
+*{
+	font-family: calibri;
+}
+
+body{
+	background-color: #3498DB;
+}
+
+button:hover{
+	background-color: blue;
+}
+.buttons{
+	background-color: #04AA6D;
+	color: white;
+  	padding: 10px 24px;
+  	cursor: pointer;
+  	font-family: Trebuchet MS;
+	font-size: 17px;
+	border-radius: 4px;
+}
+
+h1{
+	color: brown;
+	text-align: center;
+}
+
+.text{
+	color: black;
+	font-size: 19px;
+}
+
+#main{
+	font-size: 19px;
+}
+
+.submit{
+	border-radius: 3px;
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	font-family: Trebuchet MS;
+}
+
+.col-lg-6{
+	float: left;
+	width: 50%;
+}
+
+#name1, #name2{
+	position: relative;
+	left: 100px;
+}
+
+#email1, #email2{
+	position: relative;
+	left: 105px;
+}
+
+#contact1, #contact2{
+	position: relative;
+	left: 20px;
+}
+
+#query{
+	position: relative;
+	left: 100px;
+	height: 80px;
+	width: 140px;
+}
+
+#feedback{
+	position: relative;
+	left: 75px;
+	height: 80px;
+	width: 140px;
+}
+
+#querylabel{
+	position: relative;
+	bottom: 65px;
+}
+
+#feedbacklabel{
+	position: relative;
+	bottom: 65px;
+}
+
+#credits{
+	text-align: center;
+	background-color: white;
+	
+}

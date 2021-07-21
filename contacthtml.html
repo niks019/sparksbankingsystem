@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<title>Banking System</title>
+	<div id="button">		
+		<a href="C:\Users\niran\Desktop\WebD\Sparks\sparksindex.html"><button class="buttons">Home</button></a>
+		<a href="https://www.thesparksfoundationsingapore.org/"><button class="buttons">About</button></a>
+		<a href="C:\Users\niran\Desktop\WebD\Sparks\customerhtml.html"><button class="buttons">View All Customers</button></a>
+		<a href="C:\Users\niran\Desktop\WebD\Sparks\customerhtml.html#bottomsection"><button class="buttons">Money Transfer</button></a>
+		<a href="C:\Users\niran\Desktop\WebD\Sparks\contacthtml.html"><button class="buttons">Contact Us</button></a>
+	</div>
+	<h1>SPARKS BANKING SYSTEM</h1>
+	<link rel="stylesheet" type="text/css" href="contactcss.css">
+</head>
+<body>
+	<div id="main">
+	<p>In case of any fraudulent transaction or any kind of suspicious activity please contact us at our official contact number:<a href="tel:0123456789">0123-456-789</a></p>
+		
+		<div>Please send any queries to us at our email: <a href="sparks@gmail.com">sparks@gmail.com</div></a>
+		<div class="col-lg-6">
+		<details>
+			<summary>For any other Query:</summary><br>
+			Fill out the form below:
+			<form class="form" method="post">
+				<label for="name">Name:</label>
+				<input id="name1" type="text" name="name" required><br><br>
+				<label for="email">Email:</label>
+				<input id="email1" type="text" name="email" required><br><br>
+				<label for="contact">Contact Number:</label>
+				<input id="contact1" type="number" name="contact" required><br><br>
+				<label id="querylabel" for="query">Query:</label>
+				<textarea id="query" type="text" name="query" required></textarea>	
+			</form>
+			<button class="submit" type="submit" onclick="clicked()">Submit</button>
+		</details>
+	</div>
+	<div class="col-lg-6">	
+		<details>
+				<summary>For Feedbacks and Suggestions:</summary><br>
+			Fill out the form below:
+			<form class="form" method="post">
+				<label for="name">Name:</label>
+				<input id="name2" type="text" name="name" required><br><br>
+				<label for="email">Email:</label>
+				<input id="email2" type="text" name="email" required><br><br>
+				<label for="contact">Contact Number:</label>
+				<input id="contact2" type="number" name="contact" required><br><br>
+				<label id="feedbacklabel" for="feedback">Feedback:</label>
+				<textarea id="feedback" type="text" name="feedback" required></textarea><br>
+			</form>
+			<button class="submit" type="submit" onclick="clicked()">Submit</button>
+		</details>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<script type="text/javascript">
+    function clicked() {
+       if (confirm('Do you want to submit?')) {
+           yourformelement.submit();
+       } else {
+           return false;
+       }
+    }
+
+</script>
+	
+
+
+<footer id="credits">&copy;Created By: Niranjan Sharma<br>
+			Linkedin:<a href ="https://www.linkedin.com/in/niranjan-sharma-25448a1b0"><img class="hover" src="linkedin.png" width="40px" height="20px"></a></footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+*{
+	font-family: calibri !important;
+}
+
+body{
+	background-color: #3498DB !important;
+}
+
+button:hover{
+	background-color: darkgreen;
+}
+.buttons{
+	background-color: #04AA6D;
+	color: white;
+  	padding: 10px 24px;
+  	cursor: pointer;
+  	font-family: Trebuchet MS;
+	font-size: 17px;
+	border-radius: 4px;
+}
+
+h1{
+	color: brown !important;
+	text-align: center !important;
+}
+
+th{
+	background-color: #04AA6D !important;
+	font-size: 21px !important;
+	color: orange !important;
+	}
+
+table{
+	margin-left: 350px;
+	border: 2px solid blue;
+}
+
+button#send{
+	position: absolute;
+	left: 190px;	
+}
+
+button#transactions{
+	position: relative;
+	left: 830px;	
+}
+
+img.hover{
+  opacity: 0.7;
+}
+
+img.hover:hover {
+  opacity: 1.0;
+}
+
+#credits{
+	text-align: center;
+	background-color: white;
+}

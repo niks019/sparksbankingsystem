@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking System</title>
+	<div id="button">
+		<a href="C:\Users\niran\Desktop\WebD\Sparks\sparksindex.html"><button class="buttons">Home</button></a>
+		<a href="C:\Users\niran\Desktop\WebD\Sparks\abouthtml.html"><button class="buttons">About</button></a>
+		<a href="C:\Users\niran\Desktop\WebD\Sparks\customerhtml.html"><button class="buttons">View All Customers</button></a>
+		<a href="C:\Users\niran\Desktop\WebD\Sparks\customerhtml.html#bottomsection"><button class="buttons">Money Transfer</button></a>
+		<a href="C:\Users\niran\Desktop\WebD\Sparks\contacthtml.html"><button class="buttons">Contact Us</button></a>
+		</div>
+	<h1>SPARKS BANKING SYSTEM</h1>
+	<link rel="stylesheet" type="text/css" href="customercss.css">
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+</head>
+<body>
+	<div><h2>Welcome to Sparks Banking System!</h2></div>
+	<div class="table">
+		<table>
+		<thead>
+			<tr>
+				<th scope="col">S.No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">E-mail ID</th>
+                <th scope="col">Current Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-warning">
+                <td scope="row">1</td>
+                <td>Nitin</td>
+                <td>Nitin@gmail.com</td>
+                <td><p id="NitinBankBalance">73300</p></td>
+            </tr>
+            <tr class="table-light">
+                <td scope="row">2</td>
+                <td>Abhishek</td>
+                <td>Abhishek@gmail.com</td>
+                <td><p id="AbhishekBankBalance">24300</p></td>
+            </tr>
+            <tr class="table-warning">
+                <td scope="row">3</td>
+                <td>Varun</td>
+                <td>Varun@gmail.com</td>
+                <td><p id="VarunBankBalance">31500</p></td>
+            </tr>
+            <tr class="table-light">
+                <td scope="row">4</td>
+                <td>Mohan</td>
+                <td>Mohan@gmail.com</td>
+                <td><p id="MohanBankBalance">28200</p></td>
+            </tr>
+            <tr class="table-warning">
+                <td scope="row">5</td>
+                <td>Nikhil</td>
+                <td>Nikhil@gmail.com</td>
+                <td><p id="NikhilBankBalance">20500</p></td>
+            </tr>
+            <tr class="table-light">
+                <td scope="row">6</td>
+                <td>Akhil</td>
+                <td>Akhil@gmail.com</td>
+                <td><p id="AkhilBankBalance">41100</p></td>
+            </tr>
+            <tr class="table-warning">
+                <td>7</td>
+                <td>Ramesh</td>
+                <td>Ramesh@gmail.com</td>
+                <td><p id="NishaBankBalance">63600</p></td>
+            </tr>
+            <tr class="table-light">
+                <td scope="row">8</td>
+                <td>Rahul</td>
+                <td>Rahul@gmail.com</td>
+                <td><p id="RahulBankBalance">43800</p></td>
+            </tr>
+            <tr class="table-warning">
+                <td scope="row">9</td>
+                <td>Neeraj</td>
+                <td>Neeraj@gmail.com</td>
+                <td><p id="NeerajBankBalance">57000</p></td>
+            </tr>
+            <tr class="table-light">
+                <td scope="row">10</td>
+                <td>Nikita</td>
+                <td>Nikita@gmail.com</td>
+                <td><p id="NikitaBankBalance">37000</p></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <div>
+    	<button id ="send" class="buttons" data-toggle="modal" data-target="#sendMoney">Transfer Money</button>
+    </div>
+    <!-- Send money -->
+    <a name="bottomsection"></a>
+  <div class="modal fade" id="sendMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="input-group mb-3">
+              <input type="text" id="enterSName" class="form-control" placeholder="Sender's username" aria-label="Sender's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" id="enterName" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Rs. ₹</span>
+              </div>
+              <input type="text" id="enterAmount" class="form-control" placeholder=" Enter Amount" aria-label="Amount">
+              <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal">Send Money</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div>
+<button id ="transactions" class="buttons" data-toggle="modal" data-target="#transactionHistory">View transactions</button>
+    </div>
+  <!-- Transaction History-->
+  <div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ol id="transaction-history-body">
+
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href = #top><img class="hover" src="toparrow.png" height="50px" width="50px" alt="Back to Top"></a>
+		<div id="credits">&copy;Created By: Niranjan Sharma<br>
+			Linkedin:<a href ="https://www.linkedin.com/in/niranjan-sharma-25448a1b0"><img class="hover" src="linkedin.png" width="40px" height="20px"></a></div>
+
+    <script src="transaction.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+*{
+	font-family: calibri;
+}
+
+body{
+	background-color: #3498DB;
+}
+
+button:hover{
+	background-color: darkgreen;
+}
+.buttons{
+	background-color: #04AA6D;
+	color: white;
+  	padding: 10px 24px;
+  	cursor: pointer;
+  	font-family: Trebuchet MS;
+	font-size: 17px;
+	border-radius: 4px;
+}
+
+h1{
+	color: brown;
+	text-align: center;
+}
+
+.text{
+	color: black;
+	font-size: 19px;
+}
+
+#credits{
+	text-align: center;
+	background-color: white;
+}
+
+#bank{
+	position: relative;
+	left: 50px;
+}
+
+#money{
+	position: relative;
+	left: 780px;
+}
+
+img.hover{
+  opacity: 0.7;
+}
+
+img.hover:hover {
+  opacity: 1.0;
+}
